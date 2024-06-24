@@ -1,0 +1,51 @@
+/* Style for the header container */
+.app__header {
+    background-color: var(--color-black); /* Sets the background color of the header using a CSS variable */
+}
+
+/* Style for the main heading within the header */
+.app__header-h1 {
+    font-family: var(--font-base); /* Sets the font family using a CSS variable */
+    color: var(--color-golden); /* Sets the text color using a CSS variable */
+    font-weight: 700; /* Sets the font weight to bold */
+    letter-spacing: 0.04em; /* Adds spacing between letters */
+    text-transform: capitalize; /* Capitalizes the first letter of each word */
+    line-height: 117px; /* Sets the line height */
+    font-size: 90px; /* Sets the font size */
+}
+
+/* Style for the image within the header */
+.app__header-img img {
+    width: 80%; /* Sets the width of the image to 80% of its container */
+}
+
+/* Media query for screens wider than 2000px */
+@media screen and (min-width: 2000px) {
+    .app__header-h1 {
+        font-size: 180px; /* Increases the font size for very large screens */
+        line-height: 210px; /* Increases the line height accordingly */
+    }
+}
+
+/* Media query for screens narrower than 1150px */
+@media screen and (max-width: 1150px) {
+    .app__header-h1 {
+        font-size: 90px; /* Keeps the font size at 90px for mid-sized screens */
+    }
+}
+
+/* Media query for screens narrower than 650px */
+@media screen and (max-width: 650px) {
+    .app__header-h1 {
+        font-size: 70px; /* Decreases the font size for smaller screens */
+        line-height: 87px; /* Adjusts the line height accordingly */
+    }
+}
+
+/* Media query for screens narrower than 450px */
+@media screen and (max-width: 450px) {
+    .app__header-h1 {
+        font-size: 50px; /* Further decreases the font size for very small screens */
+        line-height: 70px; /* Adjusts the line height accordingly */
+    }
+}

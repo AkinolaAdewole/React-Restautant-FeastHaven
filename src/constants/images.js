@@ -21,6 +21,8 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import feasthaven from '../assets/feasthaven.png'
+import egusi from '../assets/egusi.jpg'
+import amala from '../assets/amala.jpg'
 
 export default {
   bg,
@@ -45,5 +47,7 @@ export default {
   sign,
   quote,
   gericht,
-  feasthaven
+  feasthaven,
+  egusi,
+  amala
 };
