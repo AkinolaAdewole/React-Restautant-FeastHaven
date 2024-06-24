@@ -1,0 +1,145 @@
+/* Styling for the main navigation bar */
+.app__navbar {
+    width: 100%; /* Navbar spans the full width of the viewport */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly with space between them */
+    align-items: center; /* Center items vertically */
+    background: var(--color-black); /* Background color from CSS variable */
+    padding: 1rem 2rem; /* Padding of 1rem top/bottom and 2rem left/right */
+}
+
+/* Styling for the navbar logo container */
+.app__navbar-logo {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for the logo image */
+.app__navbar-logo img {
+    width: 150px; /* Set the width of the logo image */
+}
+
+/* Styling for the navbar links container */
+.app__navbar-links {
+    flex: 1; /* Allow this container to grow and fill available space */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center links horizontally */
+    align-items: center; /* Center links vertically */
+    list-style: none; /* Remove default list styling */
+}
+
+/* Styling for individual navbar links */
+.app__navbar-links li {
+    margin: 0 1rem; /* Margin of 1rem on left/right */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for hovered navbar links */
+.app__navbar-links li:hover {
+    color: var(--color-grey); /* Change color on hover */
+}
+
+/* Styling for the login section in the navbar */
+.app__navbar-login {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the end (right) */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for links in the login section */
+.app__navbar-login a {
+    margin: 0 1rem; /* Margin of 1rem on left/right */
+    text-decoration: none; /* Remove underline from links */
+    transition: .5s ease; /* Smooth transition for changes */
+}
+
+/* Styling for hovered links in the login section */
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden); /* Add bottom border on hover */
+}
+
+/* Styling for a vertical divider in the login section */
+.app__navbar-login div {
+    width: 1px; /* Width of the divider */
+    height: 30px; /* Height of the divider */
+    background: var(--color-grey); /* Background color of the divider */
+}
+
+/* Styling for small screen navbar */
+.app__navbar-smallscreen {
+    display: none; /* Hide by default */
+}
+
+/* Styling for small screen overlay */
+.app__navbar-smallscreen_overlay {
+    position: fixed; /* Fix position relative to viewport */
+    top: 0; /* Top edge of the viewport */
+    left: 0; /* Left edge of the viewport */
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background: var(--color-black); /* Background color */
+    transition: .5s ease; /* Smooth transition for changes */
+    flex-direction: column; /* Stack children vertically */
+    z-index: 5; /* Ensure overlay is on top */
+}
+
+/* Styling for the close button in the small screen overlay */
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px; /* Size of the close button */
+    color: var(--color-golden); /* Color of the close button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute; /* Position relative to nearest positioned ancestor */
+    top: 20px; /* 20px from the top */
+    right: 20px; /* 20px from the right */
+}
+
+/* Styling for links in the small screen overlay */
+.app__navbar-smallscreen_links {
+    list-style: none; /* Remove default list styling */
+}
+
+/* Styling for individual links in the small screen overlay */
+.app__navbar-smallscreen_links li {
+    margin: 2rem; /* Margin around each link */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: var(--color-golden); /* Text color */
+    font-size: 2rem; /* Font size */
+    text-align: center; /* Center text */
+    font-family: var(--font-base); /* Font family from CSS variable */
+}
+
+/* Styling for hovered links in the small screen overlay */
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white); /* Change color on hover */
+}
+
+/* Media query for screens wider than 2000px */
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px; /* Larger logo image */
+    }
+}
+
+/* Media query for screens narrower than 1150px */
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none; /* Hide standard navbar links */
+    }
+    .app__navbar-smallscreen {
+        display: flex; /* Show small screen navbar */
+    }
+}
+
+/* Media query for screens narrower than 650px */
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem; /* Reduce padding */
+    }
+    .app__navbar-login {
+        display: none; /* Hide login section */
+    }
+    .app__navbar-logo img {
+        width: 110px; /* Smaller logo image */
+    }
+}
