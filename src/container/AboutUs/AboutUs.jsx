@@ -21,8 +21,10 @@ const AboutUs = () => (
       <div className="app__aboutus-content_about">
         <h1 className="headtext__cormorant">About Us</h1> {/* Section heading */}
         <img src={images.spoon} alt="about_spoon" className="spoon__img" /> {/* Decorative spoon image */}
-        <p className="p__opensans">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.
+        <p className="p__opensans">        
+            At Feast Haven Restaurant, we blend creative cuisine with warm hospitality for a unique 
+            dining experience. 
+            <br /> Join us for an exciting gastronomic adventure.
         </p> {/* About Us description */}
         <button type="button" className="custom__button">Know More</button> {/* Button */}
       </div>
@@ -36,8 +38,9 @@ const AboutUs = () => (
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Our History</h1> {/* Section heading */}
         <img src={images.spoon} alt="about_spoon" className="spoon__img" /> {/* Decorative spoon image */}
-        <p className="p__opensans">
-          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
+        <p className="p__opensans">     
+          Founded in 2024, Feast Haven Restaurant blends traditional and modern culinary techniques. 
+          Known for our innovative dishes and exceptional service.
         </p> {/* Our History description */}
         <button type="button" className="custom__button">Know More</button> {/* Button */}
       </div>

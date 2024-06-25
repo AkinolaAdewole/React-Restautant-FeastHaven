@@ -14,10 +14,13 @@ const Header = () => (
       {/* Subheading component with a title prop */}
       <SubHeading title="Chase the new flavour" />
       {/* Main heading for the header */}
-      <h1 className="app__header-h1">The Key To Fine Dining</h1>
+      <h1 className="app__header-h1">Secret to Fine Cuisine</h1>
       {/* Paragraph with custom styling */}
       <p className="p__opensans" style={{ margin: '2rem 0' }}>
-        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus 
+      Welcome to Feast Haven Restaurant, where global flavors meet culinary excellence. 
+      Our chefs create innovative dishes using the freshest ingredients, ensuring a delightful dining experience. 
+      Whether for a special celebration or a cozy dinner, our warm atmosphere and impeccable service make every visit memorable. 
+      Join us for an unforgettable culinary journey. 
       </p>
       {/* Button with custom styling */}
       <button type="button" className="custom__button">Explore Menu</button>
